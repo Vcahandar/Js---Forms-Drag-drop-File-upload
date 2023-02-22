@@ -29,23 +29,33 @@
 
 
 .upload-area{
+    border: solid 1px black;
+
     width: 250px;
     height: 200px;
-    background-color: brown;
-    border-radius: 10px;
-    border: 2px dotted black;
+    background-color:black;
+    border-radius: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.5s;
 }
 
+
 .upload-area i{
+    transition: all 0.5s;
     cursor: pointer;
     display: block;
     color: white;
-    font-size: 50px;
+    font-size: 90px;
 }
+
+/* i:hover{
+    color: blue;
+
+} */
 
 
 .img{
@@ -55,4 +65,14 @@
 .img img{
     width: 100%;
     height: 100%;
+}
+
+.table{
+    border: solid 1px white;
+    font-weight: 600;
+    background-color: brown;
+    font-family: monospace;
+    border-radius: 25px;
+    color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }

@@ -101,10 +101,21 @@ let table = document.querySelector(".table")
 
 let area=document.querySelector(".upload-area")
 
+area.addEventListener("mouseover", function () {
+    this.style.backgroundColor="white"
+    uploadIcon.style.color="blue"
+})
+
+area.addEventListener("mouseout", function () {
+    this.style.backgroundColor="black"
+    uploadIcon.style.color="white"
+    
+})
+
+
 area.ondragover=(e)=>{
     e.preventDefault();
 }
-
 
 
 area.ondrop=(e)=>{
@@ -125,12 +136,14 @@ area.ondrop=(e)=>{
             </div>
             </td>
             </tr>`
-
         }
 
         reader.readAsDataURL(file)
-
     }
+    table.classList.remove("d-none")
+
+
+
 }
 
 uploadIcon.addEventListener("click", function () {
